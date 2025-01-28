@@ -14,6 +14,7 @@ public class Ferry {
     private final int maxCapacity;
     private final int maxWeight;
     private final Queue<Car> carsOnFerry = new LinkedList<>();
+    private final Queue<Car> waitingCars = new LinkedList<>();
     private int currentWeight = 0;
     private final ReentrantLock lock = new ReentrantLock();
     private boolean isCrossing = false;
@@ -36,7 +37,8 @@ public class Ferry {
                 currentWeight += car.getWeight();
                 logger.info("Car loaded: {}", car);
             } else {
-                logger.warn("Cannot load car: {}. Ferry is full or overweight.", car);
+                waitingCars.add(car);
+                logger.info("Cannot load car: {}. Ferry is full or overweight. Car added to the queue.", car);
             }
         } finally {
             lock.unlock();
@@ -57,6 +59,26 @@ public class Ferry {
                 carsOnFerry.clear();
                 currentWeight = 0;
                 logger.info("All cars unloaded. Ferry is now empty.");
+
+                loadCarsFromQueue();
+            }
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    private void loadCarsFromQueue() {
+        lock.lock();
+        try {
+            while (!waitingCars.isEmpty()) {
+                Car car = waitingCars.peek();
+                if (carsOnFerry.size() < maxCapacity && (currentWeight + car.getWeight()) <= maxWeight) {
+                    carsOnFerry.add(waitingCars.poll());
+                    currentWeight += car.getWeight();
+                    logger.info("Car loaded from queue: {}", car);
+                } else {
+                    break;
+                }
             }
         } finally {
             lock.unlock();
@@ -75,17 +97,15 @@ public class Ferry {
                 logger.info("Cannot start crossing. Ferry is empty.");
             } else {
                 isCrossing = true;
-                logger.info("Starting to cross the river with cars: {}", carsOnFerry);
-
-                // Simulate crossing time
+                logger.info("Starting to cross the river.");
                 try {
-                    TimeUnit.SECONDS.sleep(5); // Use TimeUnit instead of Thread.sleep
+                    TimeUnit.SECONDS.sleep(5);
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                     logger.error("Crossing interrupted: ", e);
                 }
                 isCrossing = false;
-                logger.info("Ferry has reached the other side with cars: {}", carsOnFerry);
+                logger.info("Ferry has reached the other side.");
             }
         } finally {
             lock.unlock();
@@ -106,5 +126,9 @@ public class Ferry {
 
     public Queue<Car> getCarsOnFerry() {
         return carsOnFerry;
+    }
+
+    public Queue<Car> getWaitingCars() {
+        return waitingCars;
     }
 }

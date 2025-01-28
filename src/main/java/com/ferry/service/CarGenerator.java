@@ -1,7 +1,7 @@
 package com.ferry.service;
 
-import com.ferry.entity.Car;
 import com.ferry.entity.Ferry;
+import com.ferry.entity.Car;
 import com.ferry.reader.FerryReader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -12,7 +12,6 @@ import java.util.concurrent.TimeUnit;
 
 public class CarGenerator implements Runnable {
     private static final Logger logger = LogManager.getLogger(CarGenerator.class);
-
     private final Ferry ferry;
     private final List<Car> cars;
 
@@ -21,8 +20,7 @@ public class CarGenerator implements Runnable {
         try {
             this.cars = FerryReader.readCarsFromFile(filePath);
         } catch (IOException e) {
-            logger.error("Failed to read car data from file: {}", filePath, e);
-            throw new RuntimeException("Failed to read car data from file: " + filePath, e);
+            throw new RuntimeException("Failed to read car data from file", e);
         }
     }
 
@@ -34,14 +32,17 @@ public class CarGenerator implements Runnable {
                 break;
             }
 
-            logger.info("Current ferry queue before loading: {}", ferry.getCarsOnFerry()); // Log current state of queue
+
+            logger.info("Current ferry queue before loading: {}", ferry.getCarsOnFerry());
             ferry.loadCar(car);
-            logger.info("Current ferry queue after loading: {}", ferry.getCarsOnFerry()); // Log state after loading
+
+            logger.info("Current ferry queue after loading: {}", ferry.getCarsOnFerry());
+            logger.info("Current waiting queue: {}", ferry.getWaitingCars());
 
             try {
-                TimeUnit.SECONDS.sleep(1); // Pause before loading next car
+                TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
-                Thread.currentThread().interrupt(); // Restore interrupt status
+                Thread.currentThread().interrupt();
                 logger.warn("Car generation interrupted during sleep.", e);
                 break;
             }
