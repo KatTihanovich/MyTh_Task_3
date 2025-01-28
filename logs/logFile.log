@@ -1,0 +1,156 @@
+[INFO ] 2025-01-28 19:13:52.099 [pool-2-thread-1] Ferry - Car loaded: Car{type='passenger', weight=1000}
+[INFO ] 2025-01-28 19:13:52.108 [pool-2-thread-2] Ferry - Starting to cross the river.
+[INFO ] 2025-01-28 19:13:57.113 [pool-2-thread-2] Ferry - Ferry has reached the other side.
+[INFO ] 2025-01-28 19:13:57.114 [pool-2-thread-1] Ferry - Car loaded: Car{type='cargo', weight=3000}
+[INFO ] 2025-01-28 19:13:58.128 [pool-2-thread-1] Ferry - Cannot load car: Car{type='passenger', weight=1500}. Ferry is full.
+[INFO ] 2025-01-28 19:13:59.132 [pool-2-thread-1] Ferry - Cannot load car: Car{type='cargo', weight=2500}. Ferry is full.
+[INFO ] 2025-01-28 19:14:02.118 [pool-2-thread-2] Ferry - All cars unloaded. Ferry is now empty.
+[INFO ] 2025-01-28 19:14:02.146 [pool-2-thread-2] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 19:14:07.151 [pool-2-thread-2] Ferry - No cars to unload. Ferry is empty.
+[INFO ] 2025-01-28 19:14:07.154 [pool-2-thread-2] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 19:14:12.184 [pool-2-thread-2] Ferry - No cars to unload. Ferry is empty.
+[INFO ] 2025-01-28 19:14:12.184 [pool-2-thread-2] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 19:14:17.188 [pool-2-thread-2] Ferry - No cars to unload. Ferry is empty.
+[INFO ] 2025-01-28 19:14:17.190 [pool-2-thread-2] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 19:14:22.204 [pool-2-thread-2] Ferry - No cars to unload. Ferry is empty.
+[INFO ] 2025-01-28 19:14:22.205 [pool-2-thread-2] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 20:18:11.016 [main] FerryManager - Starting ferry simulation...
+[INFO ] 2025-01-28 20:18:11.054 [Thread-0] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 20:18:11.058 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Passenger', weight=1500]
+[INFO ] 2025-01-28 20:18:11.058 [pool-2-thread-1] Ferry - Car loaded: Car[type='Passenger', weight=1500]
+[INFO ] 2025-01-28 20:18:12.061 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Cargo', weight=3000]
+[INFO ] 2025-01-28 20:18:12.062 [pool-2-thread-1] Ferry - Car loaded: Car[type='Cargo', weight=3000]
+[INFO ] 2025-01-28 20:18:13.078 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Passenger', weight=2200]
+[WARN ] 2025-01-28 20:18:13.079 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Passenger', weight=2200]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:18:14.088 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Cargo', weight=5000]
+[WARN ] 2025-01-28 20:18:14.089 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=5000]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:18:15.103 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Passenger', weight=1300]
+[WARN ] 2025-01-28 20:18:15.104 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Passenger', weight=1300]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:18:16.056 [Thread-0] Ferry - All cars unloaded. Ferry is now empty.
+[INFO ] 2025-01-28 20:18:16.056 [Thread-0] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 20:18:16.117 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Cargo', weight=3500]
+[INFO ] 2025-01-28 20:18:16.117 [pool-2-thread-1] Ferry - Car loaded: Car[type='Cargo', weight=3500]
+[INFO ] 2025-01-28 20:18:17.127 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Passenger', weight=1800]
+[WARN ] 2025-01-28 20:18:17.128 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Passenger', weight=1800]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:18:18.131 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Cargo', weight=4000]
+[WARN ] 2025-01-28 20:18:18.131 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=4000]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:18:19.146 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Passenger', weight=1400]
+[INFO ] 2025-01-28 20:18:19.148 [pool-2-thread-1] Ferry - Car loaded: Car[type='Passenger', weight=1400]
+[INFO ] 2025-01-28 20:18:20.150 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Cargo', weight=2500]
+[WARN ] 2025-01-28 20:18:20.151 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=2500]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:18:21.071 [Thread-0] Ferry - All cars unloaded. Ferry is now empty.
+[INFO ] 2025-01-28 20:18:21.072 [Thread-0] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 20:18:21.163 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Passenger', weight=1600]
+[INFO ] 2025-01-28 20:18:21.164 [pool-2-thread-1] Ferry - Car loaded: Car[type='Passenger', weight=1600]
+[INFO ] 2025-01-28 20:18:22.176 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Cargo', weight=6000]
+[WARN ] 2025-01-28 20:18:22.177 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=6000]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:18:23.190 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Passenger', weight=1100]
+[INFO ] 2025-01-28 20:18:23.190 [pool-2-thread-1] Ferry - Car loaded: Car[type='Passenger', weight=1100]
+[INFO ] 2025-01-28 20:18:24.205 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Cargo', weight=4500]
+[WARN ] 2025-01-28 20:18:24.206 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=4500]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:18:25.208 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Passenger', weight=1900]
+[INFO ] 2025-01-28 20:18:25.208 [pool-2-thread-1] Ferry - Car loaded: Car[type='Passenger', weight=1900]
+[INFO ] 2025-01-28 20:18:26.083 [Thread-0] Ferry - All cars unloaded. Ferry is now empty.
+[INFO ] 2025-01-28 20:18:26.084 [Thread-0] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 20:18:26.223 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Cargo', weight=7000]
+[WARN ] 2025-01-28 20:18:26.224 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=7000]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:18:27.237 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Passenger', weight=2000]
+[INFO ] 2025-01-28 20:18:27.237 [pool-2-thread-1] Ferry - Car loaded: Car[type='Passenger', weight=2000]
+[INFO ] 2025-01-28 20:18:28.247 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Cargo', weight=5500]
+[WARN ] 2025-01-28 20:18:28.250 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=5500]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:18:29.260 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Passenger', weight=1700]
+[INFO ] 2025-01-28 20:18:29.261 [pool-2-thread-1] Ferry - Car loaded: Car[type='Passenger', weight=1700]
+[INFO ] 2025-01-28 20:18:30.270 [pool-2-thread-1] CarGenerator - Loading car onto ferry: Car[type='Cargo', weight=5000]
+[WARN ] 2025-01-28 20:18:30.271 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=5000]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:18:31.095 [Thread-0] Ferry - All cars unloaded. Ferry is now empty.
+[INFO ] 2025-01-28 20:18:31.096 [Thread-0] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 20:18:36.107 [Thread-0] Ferry - No cars to unload. Ferry is empty.
+[INFO ] 2025-01-28 20:18:36.108 [Thread-0] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 20:18:41.056 [main] FerryManager - Stopping ferry simulation...
+[INFO ] 2025-01-28 20:18:41.120 [Thread-0] Ferry - No cars to unload. Ferry is empty.
+[INFO ] 2025-01-28 20:21:39.461 [main] FerryManager - Starting ferry simulation...
+[INFO ] 2025-01-28 20:21:39.473 [Thread-0] FerryManager - Ferry is preparing to cross.
+[INFO ] 2025-01-28 20:21:39.473 [Thread-0] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 20:21:39.481 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: []
+[INFO ] 2025-01-28 20:21:39.482 [pool-2-thread-1] Ferry - Car loaded: Car[type='Passenger', weight=1500]
+[INFO ] 2025-01-28 20:21:39.482 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Passenger', weight=1500]]
+[INFO ] 2025-01-28 20:21:40.495 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Passenger', weight=1500]]
+[INFO ] 2025-01-28 20:21:40.497 [pool-2-thread-1] Ferry - Car loaded: Car[type='Cargo', weight=3000]
+[INFO ] 2025-01-28 20:21:40.497 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Passenger', weight=1500], Car[type='Cargo', weight=3000]]
+[INFO ] 2025-01-28 20:21:41.514 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Passenger', weight=1500], Car[type='Cargo', weight=3000]]
+[WARN ] 2025-01-28 20:21:41.515 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Passenger', weight=2200]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:21:41.515 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Passenger', weight=1500], Car[type='Cargo', weight=3000]]
+[INFO ] 2025-01-28 20:21:42.530 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Passenger', weight=1500], Car[type='Cargo', weight=3000]]
+[WARN ] 2025-01-28 20:21:42.531 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=5000]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:21:42.532 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Passenger', weight=1500], Car[type='Cargo', weight=3000]]
+[INFO ] 2025-01-28 20:21:43.534 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Passenger', weight=1500], Car[type='Cargo', weight=3000]]
+[WARN ] 2025-01-28 20:21:43.534 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Passenger', weight=1300]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:21:43.535 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Passenger', weight=1500], Car[type='Cargo', weight=3000]]
+[INFO ] 2025-01-28 20:21:44.474 [Thread-0] FerryManager - Ferry is unloading cars.
+[INFO ] 2025-01-28 20:21:44.476 [Thread-0] Ferry - All cars unloaded. Ferry is now empty.
+[INFO ] 2025-01-28 20:21:44.476 [Thread-0] FerryManager - Ferry is preparing to cross.
+[INFO ] 2025-01-28 20:21:44.476 [Thread-0] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 20:21:44.537 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: []
+[INFO ] 2025-01-28 20:21:44.538 [pool-2-thread-1] Ferry - Car loaded: Car[type='Cargo', weight=3500]
+[INFO ] 2025-01-28 20:21:44.539 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Cargo', weight=3500]]
+[INFO ] 2025-01-28 20:21:45.549 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Cargo', weight=3500]]
+[WARN ] 2025-01-28 20:21:45.551 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Passenger', weight=1800]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:21:45.552 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Cargo', weight=3500]]
+[INFO ] 2025-01-28 20:21:46.565 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Cargo', weight=3500]]
+[WARN ] 2025-01-28 20:21:46.566 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=4000]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:21:46.568 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Cargo', weight=3500]]
+[INFO ] 2025-01-28 20:21:47.578 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Cargo', weight=3500]]
+[INFO ] 2025-01-28 20:21:47.578 [pool-2-thread-1] Ferry - Car loaded: Car[type='Passenger', weight=1400]
+[INFO ] 2025-01-28 20:21:47.580 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Cargo', weight=3500], Car[type='Passenger', weight=1400]]
+[INFO ] 2025-01-28 20:21:48.591 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Cargo', weight=3500], Car[type='Passenger', weight=1400]]
+[WARN ] 2025-01-28 20:21:48.591 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=2500]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:21:48.592 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Cargo', weight=3500], Car[type='Passenger', weight=1400]]
+[INFO ] 2025-01-28 20:21:49.478 [Thread-0] FerryManager - Ferry is unloading cars.
+[INFO ] 2025-01-28 20:21:49.479 [Thread-0] Ferry - All cars unloaded. Ferry is now empty.
+[INFO ] 2025-01-28 20:21:49.479 [Thread-0] FerryManager - Ferry is preparing to cross.
+[INFO ] 2025-01-28 20:21:49.479 [Thread-0] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 20:21:49.603 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: []
+[INFO ] 2025-01-28 20:21:49.604 [pool-2-thread-1] Ferry - Car loaded: Car[type='Passenger', weight=1600]
+[INFO ] 2025-01-28 20:21:49.605 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Passenger', weight=1600]]
+[INFO ] 2025-01-28 20:21:50.619 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Passenger', weight=1600]]
+[WARN ] 2025-01-28 20:21:50.620 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=6000]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:21:50.620 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Passenger', weight=1600]]
+[INFO ] 2025-01-28 20:21:51.633 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Passenger', weight=1600]]
+[INFO ] 2025-01-28 20:21:51.639 [pool-2-thread-1] Ferry - Car loaded: Car[type='Passenger', weight=1100]
+[INFO ] 2025-01-28 20:21:51.640 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Passenger', weight=1600], Car[type='Passenger', weight=1100]]
+[INFO ] 2025-01-28 20:21:52.648 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Passenger', weight=1600], Car[type='Passenger', weight=1100]]
+[WARN ] 2025-01-28 20:21:52.649 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=4500]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:21:52.650 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Passenger', weight=1600], Car[type='Passenger', weight=1100]]
+[INFO ] 2025-01-28 20:21:53.661 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Passenger', weight=1600], Car[type='Passenger', weight=1100]]
+[INFO ] 2025-01-28 20:21:53.662 [pool-2-thread-1] Ferry - Car loaded: Car[type='Passenger', weight=1900]
+[INFO ] 2025-01-28 20:21:53.662 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Passenger', weight=1600], Car[type='Passenger', weight=1100], Car[type='Passenger', weight=1900]]
+[INFO ] 2025-01-28 20:21:54.489 [Thread-0] FerryManager - Ferry is unloading cars.
+[INFO ] 2025-01-28 20:21:54.490 [Thread-0] Ferry - All cars unloaded. Ferry is now empty.
+[INFO ] 2025-01-28 20:21:54.490 [Thread-0] FerryManager - Ferry is preparing to cross.
+[INFO ] 2025-01-28 20:21:54.492 [Thread-0] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 20:21:54.672 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: []
+[WARN ] 2025-01-28 20:21:54.673 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=7000]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:21:54.673 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: []
+[INFO ] 2025-01-28 20:21:55.684 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: []
+[INFO ] 2025-01-28 20:21:55.687 [pool-2-thread-1] Ferry - Car loaded: Car[type='Passenger', weight=2000]
+[INFO ] 2025-01-28 20:21:55.688 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Passenger', weight=2000]]
+[INFO ] 2025-01-28 20:21:56.692 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Passenger', weight=2000]]
+[WARN ] 2025-01-28 20:21:56.692 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=5500]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:21:56.693 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Passenger', weight=2000]]
+[INFO ] 2025-01-28 20:21:57.705 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Passenger', weight=2000]]
+[INFO ] 2025-01-28 20:21:57.707 [pool-2-thread-1] Ferry - Car loaded: Car[type='Passenger', weight=1700]
+[INFO ] 2025-01-28 20:21:57.708 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Passenger', weight=2000], Car[type='Passenger', weight=1700]]
+[INFO ] 2025-01-28 20:21:58.720 [pool-2-thread-1] CarGenerator - Current ferry queue before loading: [Car[type='Passenger', weight=2000], Car[type='Passenger', weight=1700]]
+[WARN ] 2025-01-28 20:21:58.721 [pool-2-thread-1] Ferry - Cannot load car: Car[type='Cargo', weight=5000]. Ferry is full or overweight.
+[INFO ] 2025-01-28 20:21:58.721 [pool-2-thread-1] CarGenerator - Current ferry queue after loading: [Car[type='Passenger', weight=2000], Car[type='Passenger', weight=1700]]
+[INFO ] 2025-01-28 20:21:59.503 [Thread-0] FerryManager - Ferry is unloading cars.
+[INFO ] 2025-01-28 20:21:59.503 [Thread-0] Ferry - All cars unloaded. Ferry is now empty.
+[INFO ] 2025-01-28 20:21:59.504 [Thread-0] FerryManager - Ferry is preparing to cross.
+[INFO ] 2025-01-28 20:21:59.504 [Thread-0] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 20:22:04.512 [Thread-0] FerryManager - Ferry is unloading cars.
+[INFO ] 2025-01-28 20:22:04.513 [Thread-0] Ferry - No cars to unload. Ferry is empty.
+[INFO ] 2025-01-28 20:22:04.513 [Thread-0] FerryManager - Ferry is preparing to cross.
+[INFO ] 2025-01-28 20:22:04.514 [Thread-0] Ferry - Cannot start crossing. Ferry is empty.
+[INFO ] 2025-01-28 20:22:09.482 [main] FerryManager - Stopping ferry simulation...
+[INFO ] 2025-01-28 20:22:09.515 [Thread-0] FerryManager - Ferry is unloading cars.
+[INFO ] 2025-01-28 20:22:09.515 [Thread-0] Ferry - No cars to unload. Ferry is empty.
